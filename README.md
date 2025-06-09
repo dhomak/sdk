@@ -95,7 +95,7 @@ Foliage takes the complexity out of system design by **bringing different knowle
 
 ---
 
-### 🧠 Graph Database & Functional Graph
+### Graph Database & Functional Graph
 
 At the core of Foliage is a powerful **graph structure** where:
 
@@ -105,79 +105,79 @@ At the core of Foliage is a powerful **graph structure** where:
 
 ---
 
-### 🔍 Data + Metadata = One Unified Graph
+### Data + Metadata = One Unified Graph
 
 No more silos. In Foliage, everything—objects, links, types, functions, and apps—lives in a **single shared graph**. That means you can link and traverse between data and metadata effortlessly. Signals can travel through this structure based on type relationships, making things incredibly dynamic.
 
 ---
 
-### 📡 Distributed Event Bus
+### Distributed Event Bus
 
 Foliage uses a **highly asynchronous event system** where signals are broadcast as events across a cluster-based message bus. It’s fast, persistent, and guarantees **“exactly once”** delivery—no duplicates, no lost messages.
 
 ---
 
-### 🔄 Distributed Async Runtime
+### Distributed Async Runtime
 
 Your app runs on a **network of async functions**, each tailored to handle a specific object. Define your business logic as a sequence of function calls and let Foliage distribute them wherever they’re needed—across data centers or devices.
 
 ---
 
-### 🧬 Serverless & Stateful Functions
+### Serverless & Stateful Functions
 
 Every function is **serverless**, distributed, and comes with its **own persistent memory**. That means functions remember their past interactions with specific objects, without needing a central server to coordinate.
 
 ---
 
-### 💾 Reliable, Persistent Storage
+### Reliable, Persistent Storage
 
 Function states are stored **asynchronously and durably** in the system’s core cluster. So even if a service crashes or gets relocated, everything picks up right where it left off.
 
 ---
 
-### 🔁 Graphs That Think and Communicate
+### Graphs That Think and Communicate
 
 In Foliage, graphs aren’t just for storage—they’re **living networks**. They serve as **pathways for signals** to travel from one object to another. Signals can follow simple or complex routes depending on edge types and attributes.
 
 ---
 
-### 🌐 Edge-Ready and Controller-Friendly
+### Edge-Ready and Controller-Friendly
 
 Deploy Foliage functions **directly on edge devices**—like BMCs, PLCs, or RPis. Functions are routed smartly to wherever they need to run.
 
 ---
 
-### ⚡ Built for Performance
+### Built for Performance
 
 Foliage can handle up to **400,000 function calls per second** on mid-range hardware. Thanks to clusterization, performance scales almost linearly with your infrastructure.
 
 ---
 
-### 🧭 Graph Traversal Made Easy
+### Graph Traversal Made Easy
 
 Navigate your graph like a pro with **an XPath-style query language**. Use it to explore, discover, and define how signals should move through your system.
 
 ---
 
-### 🔄 Plug-and-Play Applications
+### Plug-and-Play Applications
 
 Foliage apps are designed to **work together**. They all tap into the same graph, share data models, and reuse logic—so building on existing functionality is a breeze.
 
 ---
 
-### ✨ No-Code & Low-Code Friendly
+### No-Code & Low-Code Friendly
 
 Whether you're scripting or configuring, Foliage makes it easy to define functions and full applications using **scripts or visual tools**. You can build complete workflows without writing much code—or any at all.
 
 ---
 
-### 🖥️ Graph-Based UI Builder
+### Graph-Based UI Builder
 
 Use the graph as your **data source for interactive UIs**. Foliage offers a templated, tunable toolkit for building web interfaces that reflect the actual structure of your system.
 
 ---
 
-### 🧠 Weighted Graphs for AI and ML
+### Weighted Graphs for AI and ML
 
 Want to do signal processing or build ML workflows? Foliage supports **weighted edges**, letting you build neural-style networks inside the graph. It works with **scalars, vectors, and tensors**—perfect for advanced MLOps.
 
@@ -205,7 +205,7 @@ Clone the repository to get started:
 git clone https://github.com/foliagecp/sdk.git
 ```
 
-📚 Full setup details are available in the [documentation](https://pkg.go.dev/github.com/foliagecp/sdk).
+Full setup details are available in the [documentation](https://pkg.go.dev/github.com/foliagecp/sdk).
 
 ---
 
@@ -266,7 +266,7 @@ docker-compose up -d
 ```sh
 docker-compose down -v
 ```
-💡 Use the `TEST_NAME` environment variable to run other test suites. TK!
+Use the `TEST_NAME` environment variable to run other test suites. TK!
 
 
 
@@ -311,7 +311,7 @@ Foliage runs on a modern and efficient tech stack:
 - Docker  
 - Docker Compose
 
-🔍 [Learn about our technology choices](./docs/technologies_comparison.md)
+[Learn about our technology choices](./docs/technologies_comparison.md)
 
 ---
 
