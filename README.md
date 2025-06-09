@@ -4,7 +4,7 @@
   <img src="./docs/pics/logo.png" width="600" alt="Foliage Logo">
 </p>
 
-[Foliage](https://www.foliage.dev/) is a collaborative application platform built upon a distributed graph database, providing a unified and extensible environment for effortless automation, cross-domain connectivity, and high-performance, edge-friendly runtimes.
+[Foliage](https://www.foliage.dev/): where frustration sparks innovation.
 
 [![License][License-Image]][License-Url] ![Lint][Lint-Status-Image-Url]
 
@@ -14,7 +14,7 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)<!-- omit from toc --> 
+- [Introduction](#introduction) <!--omit from toc--> 
 - [Core Concepts](#core-concepts)
   - [Abstract](#abstract)
   - [Features](#features)
@@ -23,27 +23,26 @@
   - [Installation](#installation)
   - [Health Status Check](#health-status-check)
   - [Running Tests](#running-tests)
-  - [Customization](#customization)
 - [Development](#development)
   - [Working with the SDK](#working-with-the-sdk)
 - [Technology Stack](#technology-stack)
 - [Roadmap](#roadmap)
 - [References](#references)
 - [License](#license)
-- [Contribution](#contribution)
+- [Contributing](#contributing)
 
-## 🚀 Introduction 
+## Introduction 
 
 **Foliage** is an open-source, collaborative platform powered by a distributed graph database. It offers a flexible and high-performance foundation for edge computing, automation, and cross-domain integration. Ideal for IoT, process orchestration, and real-time logic execution.
-## 🧠 Core Concepts
+## Core Concepts
 
-### 🧩 Abstract
+### Abstract
 
 Foliage reimagines complex systems by bringing their structure and logic into a shared, abstracted graph space. This enables clearer visibility and deeper understanding—blurring the line between model and implementation.
 
 ![Abstract](./docs/pics/FoliageUnification.jpg)
 
-# System Architecture Overview
+#### System Architecture Overview
 
 The system is conceptually divided into two main layers:
 
@@ -52,7 +51,7 @@ The system is conceptually divided into two main layers:
 
 ---
 
-## Functional Layer
+#### Functional Layer
 
 The functional layer is built on **serverless stateful functions**, each encapsulating the behavior of a specific type of object or a group of related objects represented in the object model. These functions can be viewed as **logic projections onto individual graph nodes**.
 
@@ -64,7 +63,7 @@ Each function:
 
 ---
 
-## Function Interaction
+#### Function Interaction
 
 During execution, a function may:
 
@@ -79,7 +78,7 @@ A key feature is the **non-blocking execution model**:
 
 ---
 
-## Principle of Mass Asynchronous Interaction
+#### Principle of Mass Asynchronous Interaction
 
 This behavior model reflects processes typical in real-world systems (such as large organizations), where:
 
@@ -89,7 +88,7 @@ This behavior model reflects processes typical in real-world systems (such as la
 
 This ensures the system is **resilient to delays** and can **efficiently handle tasks** that are complex in depth and distributed in logic.
 
-### 🔍 Features
+### Features
 
 
 Foliage takes the complexity out of system design by **bringing different knowledge domains into one unified graph**. This makes it easier to understand relationships, spot hidden dependencies, and keep your architecture consistent and transparent. It’s like giving your system a shared brain—smart, connected, and easy to work with.
@@ -184,9 +183,9 @@ Want to do signal processing or build ML workflows? Foliage supports **weighted 
 
 
 
-## 🛠️ Getting Started
+## Getting Started
 
-### ✅ Minimum Requirements
+### Minimum Requirements
 
 **Native Installation**
 
@@ -198,7 +197,7 @@ To run Foliage in a containerized environment, all you need is [Docker](https://
 
 ---
 
-### 📥 Installation
+### Installation
 
 Clone the repository to get started:
 
@@ -210,7 +209,7 @@ git clone https://github.com/foliagecp/sdk.git
 
 ---
 
-### 🩺 Health Check
+### Health Status Check
 
 1. **Check that NATS server and Foliage runtime are running fine**:
 ```sh
@@ -236,7 +235,7 @@ fac8d1bfef3a   nats:latest                "/nats-server -js -s…"   11 minutes 
 ```
 
 
-### 🧪 Running Tests
+### Running Tests
 
 Foliage provides a set of test samples to help you get familiar with the platform. Follow these steps to run them:
 
@@ -271,7 +270,7 @@ docker-compose down -v
 
 
 
-## 🧑‍💻 Development
+## Development
 
 ### Working with the SDK
 
@@ -289,7 +288,7 @@ Helpful guides:
 - [How to write a Foliage app](./docs/how_to_write_an_application.md)  
 - [Performance measurement](./docs/performance_measures.md)
 
-## 🧰 Technology Stack
+## Technology Stack
 
 Foliage runs on a modern and efficient tech stack:
 
@@ -316,21 +315,21 @@ Foliage runs on a modern and efficient tech stack:
 
 ---
 
-## 🗺 Roadmap
+## Roadmap
 
 Check out where we’re headed:  
 ![Roadmap](./docs/pics/Roadmap.jpg)
 
-## 📎 References
+## References
 
 - [Glossary](./docs/glossary.md)  
 - [Code conventions](./docs/conventions.md)  
 - [External API](./docs/external_api.md)
 
-## 📄 License
+## License
 
 Unless otherwise noted, the Foliage source files are distributed under the Apache Version 2.0 license found in the LICENSE file.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome your ideas, improvements, and feedback. Help us grow Foliage into a powerful tool for building intelligent, connected systems. Check the [issues](https://github.com/foliagecp/sdk/issues) and open a PR anytime!
