@@ -12,6 +12,9 @@
 [License-Image]: https://img.shields.io/badge/License-Apache2-blue.svg
 [Lint-Status-Image-Url]: https://github.com/foliagecp/sdk/actions/workflows/golangci-lint.yml/badge.svg
 
+[![en](https://img.shields.io/badge/lang-en-yellow.svg)](https://github.com/dhomak/sdk/blob/main/README.md) [![ru](https://img.shields.io/badge/lang-ru-yellow.svg)](https://github.com/dhomak/sdk/blob/main/README-RU.md)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction) <!--omit from toc--> 
