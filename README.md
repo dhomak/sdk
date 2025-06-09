@@ -251,18 +251,18 @@ cd tests
 docker-compose build
 ```
 
-####3. Customize the test environment in `.env`:
+#### 3. Customize the test environment in `.env`:
 ```sh
 nano ./basic/.env
 ```
 
-####4. Start the tests:
+#### 4. Start the tests:
 
 ```sh
 docker-compose up -d
 ```
 
-####5. To stop and clean everything up:
+#### 5. To stop and clean everything up:
 ```sh
 docker-compose down -v
 ```
