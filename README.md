@@ -91,50 +91,97 @@ This ensures the system is **resilient to delays** and can **efficiently handle 
 
 ### 🔍 Features
 
-By unifying various knowledge domains into a single shared space, Foliage simplifies relationships, uncovers hidden dependencies, and promotes consistent logic across your architecture.
 
+Foliage takes the complexity out of system design by **bringing different knowledge domains into one unified graph**. This makes it easier to understand relationships, spot hidden dependencies, and keep your architecture consistent and transparent. It’s like giving your system a shared brain—smart, connected, and easy to work with.
 
-#### Graph Database & Functional Graph
-Foliage utilizes graph vertices for data storage and edges for connectivity between objects. These edges also serve as a means of data storage. Functions can be triggered by incoming signals within the context of vertices and utilize edges to call functions on neighboring vertices.
+---
 
-#### Information & Metainformation in One Graph
-In Foliage, all object types, link types, type connectivity, functions, and applications are stored in the same data graph. This integration allows for complete linkage between data and metadata, facilitating graph traversal and signal distribution based on data types.
+### 🧠 Graph Database & Functional Graph
 
-#### Distributed Event Bus
-Foliage employs an asynchronous event system where all signals are represented as events in various topics within a clusterized event bus. The event bus is persistent and implements an "exactly once" method of signal processing.
+At the core of Foliage is a powerful **graph structure** where:
 
-#### Distributed Async Runtime
-An application's runtime is composed of asynchronous functions called on objects. Business logic is defined through the declaration of call chains that implement its various use cases. Functions can be distributed across geographical and logical boundaries, providing flexibility in execution.
+- **Nodes (vertices)** store your data.
+- **Edges** connect everything—and they can store data too!
+- **Functions** get triggered by signals at these nodes and can reach out to neighboring nodes through their edges.
 
-#### Serverless Stateful Functions
-Foliage's stateful functions are distributed across numerous runtimes connected to the common network, eliminating the need for centralized management. Each stateful function instance has its own persistent context, enabling it to store data between calls.
+---
 
-#### Persistent Storage
-Function contexts are persistent and stored asynchronously in the central core cluster. They can be restored in the event of function or application crashes or relocations. Each function has a dedicated context for each object (graph vertex).
+### 🔍 Data + Metadata = One Unified Graph
 
-#### Graph as Signal Path
-Graphs in Foliage serve not only as data models but also as a means to propagate signals from one object to another. Signals can traverse one or many edges, depending on edge types and attributes.
+No more silos. In Foliage, everything—objects, links, types, functions, and apps—lives in a **single shared graph**. That means you can link and traverse between data and metadata effortlessly. Signals can travel through this structure based on type relationships, making things incredibly dynamic.
 
-#### Edge-Friendly Runtime
-Functions can be directly triggered on object controllers, such as BMC, PLC, RPi, etc. Function calls are routed to edge runtimes running on corresponding controllers.
+---
 
-#### High Performance
-Foliage boasts high performance, capable of handling up to 400,000 function calls per second on a midsize server. Scalability is nearly linear through clusterization.
+### 📡 Distributed Event Bus
 
-#### XPath-Like Query Language for Graph Traversal and Signal Distribution
-Foliage provides a query language for defining graph queries, enabling graph exploration, object discovery, and the definition of traversal routes for signal distribution, among other applications.
+Foliage uses a **highly asynchronous event system** where signals are broadcast as events across a cluster-based message bus. It’s fast, persistent, and guarantees **“exactly once”** delivery—no duplicates, no lost messages.
 
-#### Applications Can Run Simultaneously and Extend Existing Graph Functional Models
-Applications can coexist and interact using the same graph data model and communicate through graph edges. This data model reuse enhances code reuse.
+---
 
-#### No-Code Function and Application Construction
-Foliage allows for low-code/no-code declaration of both functions (via scripts and configuration files) and applications. Applications can be visually designed or configured via declaration of call chains.
+### 🔄 Distributed Async Runtime
 
-#### Flexible/Tunable No-Code Graph Observation Web UI Construction
-Foliage offers a template-based UI toolkit, enabling the use of graphs as data models to construct interactive user interfaces with graph objects and links.
+Your app runs on a **network of async functions**, each tailored to handle a specific object. Define your business logic as a sequence of function calls and let Foliage distribute them wherever they’re needed—across data centers or devices.
 
-#### Weighted Functional Graphs for Scalar, Vector, and Tensor Signals Propagation, and ML Applications
-In Foliage's graph database, links between vertices can be weighted, effectively turning the entire graph into a neural-like network. This feature makes Foliage suitable for MLOps applications and signal propagation involving scalars, vectors, and tensors.
+---
+
+### 🧬 Serverless & Stateful Functions
+
+Every function is **serverless**, distributed, and comes with its **own persistent memory**. That means functions remember their past interactions with specific objects, without needing a central server to coordinate.
+
+---
+
+### 💾 Reliable, Persistent Storage
+
+Function states are stored **asynchronously and durably** in the system’s core cluster. So even if a service crashes or gets relocated, everything picks up right where it left off.
+
+---
+
+### 🔁 Graphs That Think and Communicate
+
+In Foliage, graphs aren’t just for storage—they’re **living networks**. They serve as **pathways for signals** to travel from one object to another. Signals can follow simple or complex routes depending on edge types and attributes.
+
+---
+
+### 🌐 Edge-Ready and Controller-Friendly
+
+Deploy Foliage functions **directly on edge devices**—like BMCs, PLCs, or RPis. Functions are routed smartly to wherever they need to run.
+
+---
+
+### ⚡ Built for Performance
+
+Foliage can handle up to **400,000 function calls per second** on mid-range hardware. Thanks to clusterization, performance scales almost linearly with your infrastructure.
+
+---
+
+### 🧭 Graph Traversal Made Easy
+
+Navigate your graph like a pro with **an XPath-style query language**. Use it to explore, discover, and define how signals should move through your system.
+
+---
+
+### 🔄 Plug-and-Play Applications
+
+Foliage apps are designed to **work together**. They all tap into the same graph, share data models, and reuse logic—so building on existing functionality is a breeze.
+
+---
+
+### ✨ No-Code & Low-Code Friendly
+
+Whether you're scripting or configuring, Foliage makes it easy to define functions and full applications using **scripts or visual tools**. You can build complete workflows without writing much code—or any at all.
+
+---
+
+### 🖥️ Graph-Based UI Builder
+
+Use the graph as your **data source for interactive UIs**. Foliage offers a templated, tunable toolkit for building web interfaces that reflect the actual structure of your system.
+
+---
+
+### 🧠 Weighted Graphs for AI and ML
+
+Want to do signal processing or build ML workflows? Foliage supports **weighted edges**, letting you build neural-style networks inside the graph. It works with **scalars, vectors, and tensors**—perfect for advanced MLOps.
+
 
 
 ## 🛠️ Getting Started
